@@ -62,7 +62,8 @@ console.log(
     async function firstSixIncomplete(notDo) {
         const promise = await fetch("https://jsonplaceholder.typicode.com/todos")
         const result = await promise.json()
-        const notCompleted = result.filter(element => !element.completed).slice(0, 6)
+        const notCompleted = result.filter(element => !element.completed).slice(0, 6) //.slice muestra lo que necesitas
+
 
         console.log(notCompleted)
     }   
